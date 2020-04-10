@@ -1,0 +1,33 @@
+{
+  "name": "nuxt-seo",
+  "version": "0.0.1",
+  "description": "Nuxt.js SEO Handler",
+  "author": "peterkimzz <peterkimzz69@gmail.com>",
+  "license": "MIT",
+  "main": "lib/module.js",
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js,.vue lib",
+    "release": "standard-version && git push --follow-tags && npm publish",
+    "test": "jest test"
+  },
+  "keywords": [
+    "nuxtjs",
+    "seo",
+    "head",
+    "meta"
+  ],
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^2.0.2",
+    "@nuxtjs/module-test-utils": "^1.6.1",
+    "@vue/cli-service": "^4.3.1",
+    "eslint": "^6.8.0",
+    "jest": "^25.3.0",
+    "standard-version": "^7.1.0"
+  }
+}
